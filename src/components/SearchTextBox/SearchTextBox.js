@@ -6,7 +6,23 @@ import Suggestions from '../Suggestions';
 class SearchTextBox extends Component {
   state = {
     query: '',
-    results: ['extravagant', 'humorous', 'nothing', 'tester', 'developer', 'javascript'],
+    results: [
+      'extravagant',
+      'humorous',
+      'nothing',
+      'tester',
+      'developer',
+      'javascript',
+      'java-spring',
+      'humming',
+      'notting-hill',
+      'pipeline',
+      'linting',
+      'compassion',
+      'conference',
+      'time-zones',
+      'games',
+    ],
   }
 
   updateQuery = (query) => {

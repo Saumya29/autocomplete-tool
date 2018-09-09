@@ -25,15 +25,21 @@ class Suggestions extends Component {
       <div>
         <ul className="text-center pl-0 list-style-none m-0">
           {
-            results && results.map(result => (
-              <li className="autocomplete-item" onClick={() => this.renderPopUp(result)} key={result.toString()}>
-                {
-                  reactStringReplace(result, highlightedText, (match, i) => (
-                    <span key={i} className="highlight">{match}</span>
-                  ))
-                }
-              </li>
-            ))
+            results
+              && results.map(result => (
+                <li className="autocomplete-item" onClick={() => this.renderPopUp(result)} key={result.toString()}>
+                  {
+                    reactStringReplace(result, highlightedText, (match, i) => (
+                      <span key={i} className="highlight">{match}</span>
+                    ))
+                  }
+                </li>
+              ))
+          }
+          {
+            (results.length === 0 && highlightedText !== '')
+              ? <div style={{ padding: '1em' }}>No Match</div>
+              : null
           }
         </ul>
         <PopupBox open={popUpClicked} text={text} />

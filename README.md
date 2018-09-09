@@ -1,18 +1,19 @@
-# AutoComplete form
+# AutoComplete Tool
 A simple tool to display suggestions based on given data. On selecting one of the suggestions, a pop up appears which is followed by an alert box.
 
+This project is live **[here](https://search-tool.netlify.com)**
 
 ## Tech Stack Used
 
 **React JS:** Library for building beautiful user interfaces
 **CSS:** A style sheet language used for describing the presentation of a document written in a markup language
 
-### Dependencies
+## Dependencies
 
 1. **material-ui:** Material-UI is a set of React components that implement Google's Material Design specification.
 This project uses some of the Material UI components (for example, dialog-box, alert-box) for basic styling.
 
-For all other things (like input-box), styling was done using CSS.
+    For all other things (like input-box), styling was done using CSS.
 
 > Material UI Autocomplete component was not used. Developed one of my own :)
 
@@ -26,8 +27,7 @@ For all other things (like input-box), styling was done using CSS.
 
 6. **husky:** It is used to make it easier to work with hooks in Git, so as to apply precommit hook.
 
-7. **lint-staged:** Used to apply linting to all staged-files.
-
+7. **lint-staged:** Used to apply linting to all staged-files
 
 
 
