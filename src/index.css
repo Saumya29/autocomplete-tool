@@ -37,7 +37,7 @@ ul.list-style-none {
   list-style-type: none;
 }
 
-ul li:nth-child(odd) {
+ul li:nth-child(even) {
   background-color: #eee;
 }
 
@@ -47,6 +47,6 @@ ul li:nth-child(odd) {
 }
 
 .input-box {
-  padding: 0.7em;
+  padding: 0.8em;
   min-width: 200px;
 }

@@ -47,7 +47,7 @@ class SearchTextBox extends Component {
     }
 
     return (
-      <div className="mt-2">
+      <div>
         <input
           className="input-box"
           type="text"

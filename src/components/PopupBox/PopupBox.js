@@ -26,10 +26,10 @@ class PopupBox extends Component {
     return (
       <div>
         <Dialog open={open}>
-          <DialogTitle>AUTOFILL MATCH</DialogTitle>
+          <DialogTitle>{text}</DialogTitle>
           <DialogContent>
-            <DialogContentText>
-              {text}
+            <DialogContentText style={{ textAlign: 'center' }}>
+              Hello!
             </DialogContentText>
           </DialogContent>
           <DialogActions>

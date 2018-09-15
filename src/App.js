@@ -23,16 +23,12 @@ class App extends Component {
           <h2>Welcome, Guest!</h2>
         </div>
         <div className="flex-centered">
+          {
+            visible
+            && <SearchTextBox />
+          }
           <SearchButton clickHandler={this.onClickHandler} />
         </div>
-        {
-          visible
-          && (
-            <div className="flex-centered">
-              <SearchTextBox />
-            </div>
-          )
-        }
       </div>
     );
   }
