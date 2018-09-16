@@ -47,6 +47,12 @@ ul li:nth-child(even) {
 }
 
 .input-box {
-  padding: 0.8em;
+  padding: 0.9em;
   min-width: 200px;
+  background-color: #ccc;
+  border: 0;
+}
+
+.input-box:focus {
+  outline: none!important;
 }

@@ -18,6 +18,13 @@ class Suggestions extends Component {
     });
   };
 
+  toggleModalState = () => {
+    this.setState(prevState => ({
+      popUpClicked: !prevState.popUpClicked,
+    }));
+  }
+
+
   render() {
     const { popUpClicked, text } = this.state;
     const { results, highlightedText } = this.props;
@@ -42,7 +49,7 @@ class Suggestions extends Component {
               : null
           }
         </ul>
-        <PopupBox open={popUpClicked} text={text} />
+        <PopupBox open={popUpClicked} toggleModalState={this.toggleModalState} text={text} />
       </div>
     );
   }
